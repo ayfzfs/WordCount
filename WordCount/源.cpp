@@ -7,17 +7,18 @@ int main()
 	FILE *op;
 	int fn = 0, wn = 1;
 	char c;
-	printf("D:\\Èí¼þ¹¤³Ì\\WordCount\\Debug\\test.txt\n");
-	op = fopen("D:\\Èí¼þ¹¤³Ì\\WordCount\\Debug\\test.txt", "r");
+	printf("D:\\è½¯ä»¶å·¥ç¨‹\\WordCount\\Debug\\test.txt\n");
+	op = fopen("D:\\è½¯ä»¶å·¥ç¨‹\\WordCount\\Debug\\test.txt", "r");
 	while (!feof(op))
 	{
 		c = fgetc(op);
 		if (c == ' ' || (c >= 'a'&&c < 'z') || (c >= 'A'&&c < 'Z') || c == '\t' || c == '\n')
 			fn++;
-		if (c == ' ' || c == '£¬')
+		if (c == ' ' || c == 'ï¼Œ')
 			wn++;
 	}
-	printf("×Ö·ûÊý£º%d\n", fn);
-	printf("µ¥´ÊÊý£º%d", wn);
+	printf("å­—ç¬¦æ•°ï¼š%d\n", fn);
+	printf("å•è¯æ•°ï¼š%d", wn);
+	printf("GitHubä¸­ç¼–è¾‘");
 	return 0;
 }
