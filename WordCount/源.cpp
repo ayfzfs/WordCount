@@ -19,6 +19,5 @@ int main()
 	}
 	printf("字符数：%d\n", fn);
 	printf("单词数：%d", wn);
-	printf("GitHub中编辑");
 	return 0;
 }
