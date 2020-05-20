@@ -20,5 +20,6 @@ int main()
 	printf("字符数：%d\n", fn);
 	printf("单词数：%d", wn);
 	printf("第一次编辑");
+	printf("第二次编辑");
 	return 0;
 }
